@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    user-select: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.background{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #FFCCCC;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.countDisplay{
+    font-size: 96px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.mash {
+    animation: mash 0.5s linear 0s;
+    background-color: #6EB2E0;
+    border-radius: 50%;
+    border: 4px solid #6EB2E0;
+    position: absolute;
+    z-index: 1000;
+}
+@keyframes mash {
+    0% {
+        height: 0; 
+        opacity: 1;
+        transform: translate(0, 0);
+        width: 0;
+    }
+    100% {
+        height: 200px;
+        opacity: 0;
+        transform: translate(-100px, -100px); 
+        width: 200px;
+    }
+}
+.result{
+    font-size: 24px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.blink{
+    animation: blink .5s infinite;
+}
+@keyframes blink{
+    0% {font-weight: 100;}
+    100% {font-weight: 700;}
+}
+/* ランキング */
+caption{
+    color: black;
+    font-weight: bold;
+}
+table{
+    position: fixed;
+    top: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 210px;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px;
+}
+th{
+    padding: 5px;
+    border: solid 1px #778ca3;
+}
+td{
+    padding: 2px;
+    border: solid 1px #778ca3;
+}
