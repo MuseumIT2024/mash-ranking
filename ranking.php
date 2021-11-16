@@ -19,8 +19,8 @@ try{
 function getDb($pdo)
 {
     $stmt = $pdo->query("SELECT 
-                            i1.name AS name 
-                            ,i1.score AS score
+                            i1.name
+                            ,i1.score
                             ,(SELECT count(i2.score)
                                 FROM test i2
                                 WHERE i1.score < i2.score) + 1 AS rank
