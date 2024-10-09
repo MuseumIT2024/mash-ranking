@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>mash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./ranking.js"></script>
 </head>
-
 <body>
-    <p class="result"></p>
-    <div class="background">
-        <p class="countDisplay blink">mash!!</p>
+    
+    <div class="relative">
+        <br>
+        <img src="fun.png" class="fun">
+
+        <div class="absolute">
+            
+            <p class="text">
+                <span>触発の連鎖を通して豊かな文化的体験を深める</span><br>
+                <strong>ミュージアムIT</strong>
+            </p>
+
+            <p>ここに</p>
+            <p>クイズの説明が</p>
+            <p>書かれる</p>
+            <br>
+            
+            <div class="card">
+                <h3 id="question"></h3>
+                <div class="choice" id="choice1">
+                  <button></button>
+                  <br>
+                  <button></button>
+                  <br>
+                  <button></button>
+                  <br>
+                  <button></button>
+                  <br>
+                  <div class="hintButton" onclick="showHint();">ヒント！</div>
+                  <div id="hint" class="hint"></div>
+
+                </div>
+                
+            </div>
+
+            
+            <a href="ranking.html" id="ranking1">ランキングを表示する</a>
+
+        </div>
+
     </div>
 
-    <table id="ranking">
-        <caption>TOP3 RANKING</caption>
-        <thead>
-            <tr>
-                <th>rank</th>
-                <th>name</th>
-                <th>score</th>
-            </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-    </table>
-
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
-
 </html>
